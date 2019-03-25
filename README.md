@@ -1,45 +1,26 @@
-# myprojects
+# Excel-Kickstarter
 
-Background
+## Data Analysis on Kickstarter using Microsoft Excel Formulae, Conditional Formatting, Pivot Tables and Charts
 
-Over two billion dollars have been raised using the massively successful crowdfunding service, Kickstarter, but not every project has found success. Of the over 300,000 projects launched on Kickstarter, only a third have made it through the funding process with a positive outcome.
+Steps taken to uncover some of the market trends of four thousand past Kickstarter projects . 
 
-Since getting funded on Kickstarter requires meeting or exceeding the project's initial goal, many organizations spend months looking through past projects in an attempt to discover some trick to finding success. For this week's homework, you will organize and analyze a database of four thousand past projects in order to uncover any hidden trends.
+1) Used conditional formatting to fill each cell in the "state" column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
 
+2) Created "percent funded" column to uncover how much money a campaign made towards reaching its initial goal. Used conditional formatting to fill/color each cell using a three-color scale. The scale starts at 0 and becomes a dark shade of red, transitioning to green at 100, and then moving towards blue at 200.
 
-Instructions
+3) Created "average donation" column to uncover how much each backer for the project paid on average.
 
+4) Added two new columns, "category" at Q and "sub-category" at R, using formula to split the "Category and Sub-Category" column into two parts.
 
+5) Created Sheet2 with a pivot table to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per category; and a matching stacked column pivot chart that can be filtered by country.
 
+6) Created Sheet3 with a pivot table to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per sub-category; and a matching stacked column pivot chart that can be filtered by country and parent-category.
 
-Modified and analyzed the data of four thousand past Kickstarter projects to uncover some of the market trends. Used conditional formatting to fill each cell in the state column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
+7) The dates stored within the "deadline" and "launched_at" columns are using unix timestamps. Converted and stored these values on new columns called "Date Created Conversion" and "Date Ended Conversion".
 
-Created a new column at column O called percent funded that uses a formula to uncover how much money a campaign made towards reaching its initial goal.
+8) Created Sheet4 with a pivot table with a column of "state", rows of "Date Created Conversion", values based on the count of state, and filters based on parent category and years; and a matching a pivot chart line graph that can be filtered by category and years.
 
-Used conditional formatting to fill each cell in the percent funded column using a three-color scale. The scale starts at 0 and becomes a dark shade of red, transitioning to green at 100, and then moving towards blue at 200.
-
-
-Created a new column at column P called average donation that uses a formula to uncover how much each backer for the project paid on average.
-Created two new columns, one called category at Q and another called sub-category at R, which use formulas to split the Category and Sub-Category column into two parts.
-
-
-
-
-
-
-Created a new sheet with a pivot table to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per category.
-Created a stacked column pivot chart that can be filtered by country.
-
-
-Created a new sheet with a pivot table to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per sub-category.
-Create a stacked column pivot chart that can be filtered by country and parent-category.
-
-The dates stored within the "deadline" and "launched_at" columns are using unix timestamps. Converted and stored these values on new columns called "Date Created Conversion" and "Date Ended Conversion".
-Created a new sheet with a pivot table with a column of state, rows of Date Created Conversion, values based on the count of state, and filters based on parent category and years.
-Made a pivot chart line graph that visualizes this new table.
-
-Created a new sheet with 8 columns: Goal, Number Successful, Number Failed, Number Canceled, Total Projects, Percentage Successful, Percentage Failed, and Percentage Canceled
-Made twelve rows with the following headers...
+9) Created Sheet5 with 8 columns: Goal, Number Successful, Number Failed, Number Canceled, Total Projects, Percentage Successful, Percentage Failed, and Percentage Canceled. Made twelve rows with the following headers:
 Less Than 1000
 1000 to 4999
 5000 to 9999
@@ -52,9 +33,6 @@ Less Than 1000
 40000 to 44999
 45000 to 49999
 Greater than or equal to 50000
+Used COUNTIFS() formula to count how many successful, failed, and canceled projects were created with goals within those ranges listed above. Populated the Number Successful, Number Failed, and Number Canceled columns with this data. Added up each of the values in the Number Successful, Number Failed, and Number Canceled columns to populate the Total Projects column. Computed for the percentage of projects which were successful, failed, or were canceled per goal range. Used a line chart to visualize the relationship between a goal's amount and its chances at success, failure, or cancellation.
 
-Used COUNTIFS() formula to count how many successful, failed, and canceled projects were created with goals within those ranges listed above. Populate the Number Successful, Number Failed, and Number Canceled columns with this data.
-Added up each of the values in the Number Successful, Number Failed, and Number Canceled columns to populate the Total Projects column. Computed for the percentage of projects which were successful, failed, or were canceled per goal range.
-Used a line chart to visualize the relationship between a goal's amount and its chances at success, failure, or cancellation.
-
-Data Analysis report in Microsoft Word states three conclusions about Kickstarter campaigns, limitations of this dataset and some other possible tables/graphs that can be created
+10) Data Analysis report in Microsoft Word states three conclusions about Kickstarter campaigns, limitations of this dataset and some other possible tables/graphs that can be created.
