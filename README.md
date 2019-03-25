@@ -1,6 +1,6 @@
 # Excel-Kickstarter
 
-## Data Analysis on Kickstarter using Microsoft Excel Formulae, Conditional Formatting, Pivot Tables and Charts
+## Data Analysis on Kickstarter
 
 Steps taken to uncover some of the market trends of four thousand past Kickstarter projects . 
 
